@@ -1,0 +1,104 @@
+* { box-sizing: border-box; }
+
+body { 
+  font-family: sans-serif;
+  background-color: #F2EEE2;
+}
+
+.carousel {
+  background: #F2EEE2;
+  margin-bottom: 40px;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 450px;
+  margin-right: 10px;
+  background: white;
+  counter-increment: carousel-cell;
+}
+
+/*As nav for carousel- https://flickity.metafizzy.co/options.html*/
+/* cell number*/
+.carousel-cell:before {
+  display: block;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-nav .carousel-cell {
+  height: 150px;
+  width: 200px;
+}
+
+.carousel-nav .carousel-cell:before {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.carousel-nav .carousel-cell.is-nav-selected {
+  background: #F5CE28;
+}
+
+/* dots are lines */
+.flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
+}
+
+h1 {
+  margin-left: 10px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-size: 24pt;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #F81B84;
+}
+
+p{
+  float: left;
+  width: 50%;
+  height: 100%;
+  font-size: 18pt;
+  margin-left: 10px;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h2 {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 18pt;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #43C0F6;
+}
+
+ul{
+  float: left;
+  width: 40%;
+  height: 100%;
+  margin-left: 25px;
+  padding: 10px;
+  font-size: 18pt;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+img {
+  float: right;
+  width: 45%;
+  height: 75%;
+  margin-right: 30px;
+  margin-top: -50px;
+  border: 3px solid #43C0F6;
+}
+
